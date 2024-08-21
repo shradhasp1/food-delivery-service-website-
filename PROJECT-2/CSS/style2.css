@@ -1,0 +1,254 @@
+/* always background lageiba bele pseudo selector before use kariba better */
+
+
+/* CSS reset */
+*{
+     margin: 0px;
+     padding: 0px;
+}
+
+/* CSS Variables */
+:root{
+     --navbar-height: 59px:
+}
+
+/* NAVIGATION BAR */
+#navbar{
+     display: flex;
+     align-items: center;
+     /* justify-content: center; */
+     /*position: absolute;    /*parent uparaku paleiba*/
+     /*top: 0px;              /*just to be safe*/
+     position: relative;
+     top: 0px;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo{
+     margin: 10px 20px;
+}
+#logo img{
+     height: 57px;
+     margin: 3px 1px;
+
+}
+
+/* Navigation bar: list styling */
+#navbar ul{
+     display: flex;
+     font-family: 'Cormorant Garamond';
+}
+
+#navbar::before{
+     
+     content: "";
+     background-color: black;
+     position: absolute;
+     top: 0px;
+     left: 0px;
+     height: 100%;
+     width: 100%;
+     z-index: -1;
+     opacity: 0.4;
+}
+
+#navbar ul li{
+     /* color: white; */
+     list-style: none;
+     font-size: 1.3rem;
+}
+
+#navbar ul li a{
+     display: block;     /*display ku block dia heichi coz padding debara achi*/
+     padding: 3px 22px;
+     border-radius: 20px;
+     text-decoration: none;
+     color: rgb(255, 255, 255);
+}
+
+#navbar ul li a:hover{
+     background-color: white ;
+     color: rgb(0, 0, 0);
+ }    
+
+
+/*home section */
+#home{
+     display: flex;
+     flex-direction: column;
+     padding: 1px 200px;
+     justify-content: center;
+     align-items: center;
+     height: 370px;
+     
+}
+#home::before{
+     content: "";
+     background: url('../bg6.jpg') no-repeat center center/cover;
+     position: absolute;
+     top: 0px;
+     left: 0px;
+     height: 60%;
+     width: 100%;
+     z-index: -1;
+     opacity: 42.89;
+     
+     /* background-repeat: no-repeat;  eita lekhile habani..url side re hi lekhibaku padiba..coz center/cover lekhiba imp */
+     
+}
+
+#home h1{
+     color: white;
+     text-align: center;
+     font-family: 'Bree Serif', serif;
+}
+#home p{
+     color: white;
+     text-align: center;
+     font-size: 1.5rem;
+     font-family: 'Bree Serif', serif;
+}
+
+/* sevices section */
+#services{
+     margin:  20px;
+     display: flex;
+     
+}
+#services .box{
+     border: 2px solid brown;
+     padding: 16px;
+     margin: 20px 31px;
+     border-radius: 23px;
+     background-color: rgb(216 200 232);
+}
+#services .box img{
+    height: 110px;
+    display: block;
+    margin: auto;      /*display block , margin auto kale ,,pizza image center ku asijiba*/
+}
+/* .box{
+     margin: 100px;
+} */
+
+#services .box p{
+     font-family: 'Bree Serif', serif;
+}
+#services
+#services
+#services
+
+/* Client section */
+#client-section{
+     position: relative;
+     height: 342px;
+}
+#client-section::before{
+     content: "";
+     position: absolute;
+     background: url(../bg.3.jpg);
+     width: 100%;
+     height: 31%;
+     z-index: -1;
+     opacity: 0.4;
+}
+#clients{
+     display: flex;               /*display lex thile hi justify-content and align-items lagi pariba*/
+     justify-content: center;
+     align-items: center;
+}
+#clients img{
+     height: 70px;
+}
+.client-item{
+     padding: 34px;
+}
+
+/* CONTACT SECTION */
+#contact{
+     position: relative;
+}
+#contact::before{
+     content: "";
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     z-index: -1;
+     opacity: 0.7;
+     background: url(../contact.jpg) no-repeat center center/cover;
+}
+
+#contact-box1{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding-bottom: 34px;
+}
+ #contact-box1 input,
+ #contact-box1 textarea{
+     width: 100%;
+     padding: 0.5rem;
+     
+ }
+ #contact-box1 form{
+     width: 40%;
+ }
+ #contact-box1 label{
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+ }
+ /* .form-group{
+     margin: 35px;
+ } */
+footer{
+     background: black;
+     color: white;
+     padding: 9px 20px;
+}
+
+/* utility classes */
+.h-primary{
+     font-size: 2.8rem;
+     padding: 12px;
+     font-family: 'Bree Serif', serif;
+}
+.heading{
+     font-size: 40px;
+     font-family: 'Bree Serif', serif;
+     padding: 1px;
+     margin: 20px 0px 0px 0px;
+}
+
+.h-secondary{
+     font-size: 1.5rem;
+     padding: 12px;
+     font-family: 'Bree Serif', serif;
+}
+
+.btn{
+     padding: 6px 20px;
+     border: 2px solid white;
+     background-color: #7c3535;
+     color: white;
+     margin: 17px;
+     font-size: 1.5rem;
+     border-radius: 10px;
+     cursor: pointer;
+}
+.center{
+     text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

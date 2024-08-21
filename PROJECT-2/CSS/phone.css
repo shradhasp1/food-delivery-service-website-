@@ -1,0 +1,48 @@
+/* PHONE RE KEMITI WEBSITE DEKHAJIBA
+we */
+
+
+/*navigations*/
+#navbar{
+    flex-direction: column;
+}
+
+#navbar ul li a{
+    font-size: 1rem;
+    padding: 0px 7px;
+    padding-bottom: 8px;
+}
+/*home section*/
+#home{
+    height: 370px;
+    padding: 3px 68px;
+}
+#home::before{
+    height: 480px;
+    
+}
+#home p{
+    font-size: 13px;
+ }
+
+/*services section*/
+/* #services{
+
+} */
+
+ .box{
+    flex-direction: column;
+}
+/*clients section*/
+#clients{
+    overflow: hidden;
+}
+
+/*contact us section*/
+
+/*footer*/
+
+/*utility section*/
+.h-primary{
+    font-size: 26px;
+}
